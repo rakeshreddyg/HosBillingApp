@@ -6,6 +6,7 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>hosp Maven Webapp</name>
+  <basedir>HosBillingApp</basedir>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -22,7 +23,7 @@
          <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-war-plugin</artifactId>
          <configuration>
-           <webXml>HosBillingApp\Billing\src\main\webapp\WEB-INF\web.xml</webXml>
+           <webXml>${project.basedir}\src\main\webapp\WEB-INF\web.xml</webXml>
          </configuration>
        </plugin>
      </plugins>
