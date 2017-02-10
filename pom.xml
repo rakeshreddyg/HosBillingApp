@@ -23,6 +23,10 @@
          <artifactId>maven-war-plugin</artifactId>
          <configuration>
              <failOnMissingWebXml>false</failOnMissingWebXml>
+              <path>/${project.build.finalName}</path>
+                <url>http://52.35.107.110:8080/manager/html</url>
+               <username>admin</username>
+             <password>admin</password>
          </configuration>
        </plugin>
      </plugins>
