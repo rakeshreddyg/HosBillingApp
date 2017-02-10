@@ -24,7 +24,7 @@
          <configuration>
            <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
          </configuration>
-       <plugin>
+       </plugin>
      </plugins>
    </pluginManagement>
   </build>
