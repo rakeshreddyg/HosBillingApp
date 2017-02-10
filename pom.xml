@@ -16,14 +16,17 @@
     </dependency>
   </dependencies>
   <build>
-   <finalName>hosp</finalName>
-   <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-war-plugin</artifactId>
-      <configuration>
-         <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
-      </configuration>
-   </plugin>
+   <pluginManagement>
+     <plugins> 
+       <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-war-plugin</artifactId>
+         <configuration>
+           <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
+         </configuration>
+       <plugin>
+     </plugins>
+   </pluginManagement>
   </build>
 </project>
 
