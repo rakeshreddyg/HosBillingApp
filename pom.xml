@@ -23,10 +23,9 @@
          <artifactId>maven-war-plugin</artifactId>
          <configuration>
              <failOnMissingWebXml>false</failOnMissingWebXml>
-              <path>/hospApp</path>
-                <url>http://52.35.107.110:8080/manager/html</url>
-               <username>admin</username>
-             <password>admin</password>
+             <url>http://52.35.107.110:8080/manager/text</url>
+             <server>TomcatServer</server>
+             <path>/hospApp</path>
          </configuration>
        </plugin>
      </plugins>
