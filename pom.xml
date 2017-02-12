@@ -24,7 +24,7 @@
          <configuration>
              <failOnMissingWebXml>false</failOnMissingWebXml>
               <path>/hospApp</path>
-                <url>http://52.35.107.110:8080/manager/</url>
+                <url>http://52.35.107.110:8080/manager/html</url>
                <username>admin</username>
              <password>admin</password>
          </configuration>
