@@ -32,7 +32,6 @@
 	<configuration>
 		<url>http://localhost:8080/manager/text</url>
 		<server>TomcatServer</server>
-		<path>/hospApp</path>
 	</configuration>
        </plugin>
      </plugins>
