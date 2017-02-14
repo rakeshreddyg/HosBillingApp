@@ -1,0 +1,5 @@
+#surefire
+#Sun Feb 12 19:42:22 UTC 2017
+user.dir=/home/ubuntu/HosBillingApp
+localRepository=/root/.m2/repository
+basedir=/home/ubuntu/HosBillingApp
