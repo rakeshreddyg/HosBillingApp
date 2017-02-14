@@ -3,11 +3,9 @@
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
     <welcome-file-list>
-<<<<<<< HEAD
+
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
-=======
-        <welcome-file>application.html</welcome-file>
->>>>>>> 74aadd2e4db845c908f8f847b744e35ef0dec1d8
+  
     </welcome-file-list>
 </web-app>
