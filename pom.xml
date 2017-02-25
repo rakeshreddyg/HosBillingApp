@@ -36,12 +36,13 @@
        </plugin>
      </plugins>
    </pluginManagement>
-   <distributionManagement>
+  </build>
+  <distributionManagement>
    <snapshotRepository>
       <id>nexus</id>
       <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
    </snapshotRepository>
-</distributionManagement>
-  </build>
+  </distributionManagement>
+
 </project>
 
