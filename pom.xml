@@ -49,7 +49,7 @@
      </plugins>
    </pluginManagement>
   </build>
-	<profiles>
+    <profiles>
         <profile>
             <id>wildfly-master</id>
             <properties>
@@ -70,10 +70,6 @@
             </properties>
         </profile> 
     </profiles>
-    <activeProfiles>
-        <activeProfile>wildfly-master</activeProfile>
-        <activeProfile>wildfly-slaveone</activeProfile>
-    </activeProfiles>
   <distributionManagement>
    <repository>
       <id>nexus</id>
