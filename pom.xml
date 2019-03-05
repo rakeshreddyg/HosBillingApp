@@ -59,13 +59,13 @@
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <version>1.1.0.Alpha5</version>
-		<!--<configuration>
-		    <hostname>192.168.2.111</hostname>
+		<configuration>
+		    <hostname>${wildfly-hostname}</hostname>
 		    <port>9990</port>
 		    <username>jbossadmin</username>
 		    <password>jbossadmin</password>
 		    <name>hospApp-1.0-SNAPSHOT.war</name>
-	        </configuration>-->
+	        </configuration>
             </plugin>
      </plugins>
    </pluginManagement>
