@@ -38,31 +38,42 @@
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <version>1.1.0.Alpha5</version>
-		<configuration>
-		    <hostname>192.168.2.110</hostname>
-		    <port>9990</port>
-		    <username>jbossadmin</username>
-		    <password>jbossadmin</password>
-		    <name>hospApp-1.0-SNAPSHOT.war</name>
-	        </configuration>
-		<configuration>
+		<!--<configuration>
 		    <hostname>192.168.2.111</hostname>
 		    <port>9990</port>
 		    <username>jbossadmin</username>
 		    <password>jbossadmin</password>
 		    <name>hospApp-1.0-SNAPSHOT.war</name>
-	        </configuration>
-		<configuration>
-		    <hostname>192.168.2.112</hostname>
-		    <port>9990</port>
-		    <username>jbossadmin</username>
-		    <password>jbossadmin</password>
-		    <name>hospApp-1.0-SNAPSHOT.war</name>
-	        </configuration>
+	        </configuration>-->
             </plugin>
      </plugins>
    </pluginManagement>
   </build>
+	<profiles>
+        <profile>
+            <id>wildfly-master</id>
+            <properties>
+                <wildfly-hostname>192.168.2.110</wildfly-hostname>
+                <wildfly-port>9990</wildfly-port>
+                <wildfly-username>jbossadmin</wildfly-username>
+                <wildfly-password>jbossadmin</wildfly-password>
+            </properties>
+        </profile>
+ 
+        <profile>
+            <id>wildfly-slaveone</id>
+            <properties>
+                <wildfly-hostname>192.168.2.111</wildfly-hostname>
+                <wildfly-port>9990</wildfly-port>
+                <wildfly-username>jbossadmin</wildfly-username>
+                <wildfly-password>jbossadmin</wildfly-password>
+            </properties>
+        </profile> 
+    </profiles>
+    <activeProfiles>
+        <activeProfile>wildfly-master</activeProfile>
+        <activeProfile>wildfly-slaveone</activeProfile>
+    </activeProfiles>
   <distributionManagement>
    <repository>
       <id>nexus</id>
